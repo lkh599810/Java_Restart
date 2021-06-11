@@ -76,6 +76,7 @@ public class 스레드예제 {
 		음악실행.start();
 		메일실행.start();
 		
+		
 	}
 	
 }
