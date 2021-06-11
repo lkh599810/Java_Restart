@@ -2,7 +2,7 @@ package day17;
 
 public class 예외처리 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
 		
 		//예외처리 : 예외 발생했을 시 처리코드 =>코드상 오류 제외, 오류를 수정하는게아니고 사용가능코드로 대체하는것
@@ -31,10 +31,28 @@ public class 예외처리 {
 //		}
 //
 //		
+		//예외처리 -> 오류가 떴을 시 '프로그램이 안 꺼지게' 해줌.
+		
+		//예외 던지기 : throws exception => try/catch와 큰 다를 바 없지만 메소드 내에 여러 오류들이 있을 시 간편하게 한줄로 끝남.
 		
 		
+		메소드(); // ==> 밑의 메소드에서 처음 throw하면 여기서 빨간줄. 얘를 다시 메인에서 던지면 Object(슈퍼클래스)에서 예외처리
+		
+		
+		// finally => try catch finally 예외와 관계없이 무조건 처리.
 		
 		
 	}
+	
+	//예외 던지기
+	public static void 메소드() throws Exception{ //예외던지기 throws Exception, 만약 main에서 예외던지면 Object에서 처리
+		
+		Class 클래스찾기=Class.forName("문자열.class");
+			// 혹시나 클래스가 없을 경우에대한 예외처리를 무조건 해야하는 하나의 예시.
+			
+		
+		
+	}
+	
 
 }
