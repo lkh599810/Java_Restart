@@ -21,31 +21,25 @@ public class 클래스예제 {
 		
 		String 검색어= scan.next();
 		
-		
+	//	System.out.println(도서[0].contains(검색어) );
 //		
-//		for(int i=0; i<도서.length; i++) {
+		for(int i=0; i<도서.length; i++) {
+			
+			if(도서[i].contains(검색어)) {
+				
+				System.out.println(도서[i]);
+			}
+		}
+		
+//		for(String temp: 도서) {
 //			
-//			if(도서[i].contains(검색어)) {
+//			if(temp.indexOf(검색어)!=-1) {
 //				
-//				System.out.println(도서[i]);
+//				System.out.println(temp);
 //				
-//				break;
-//				
-//			}else if(! 도서[i].contains(검색어)){
-//				System.out.println("찾는도서가 없음");
 //			}
 //			
 //		}
-		
-		for(String temp: 도서) {
-			
-			if(temp.indexOf(검색어)!=-1) {
-				
-				System.out.println(temp);
-				
-			}
-			
-		}
 
 	}
 
